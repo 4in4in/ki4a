@@ -44,6 +44,9 @@
     <string name="pref_title_key">Use Private Key</string>
     <string name="pref_summary_key">Instead of password</string>
 
+    <string name="pref_default_pubkey_accepted_key_types">PubKeyAcceptedKeyTypes (ex.: "+ssh-rsa")</string>
+    <string name="pref_title_pubkey_accepted_key_types"></string>
+
     <string name="pref_title_proxy_section">HTTP Proxy</string>
 
     <string name="pref_title_proxy_host">Address</string>

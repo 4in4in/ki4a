@@ -69,6 +69,14 @@
         android:key="compress_switch"
         android:title="@string/pref_title_compress" />
 
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_pubkey_accepted_key_types"
+        android:key="pubkey_accepted_key_types"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_pubkey_accepted_key_types" />
+
     <PreferenceCategory
         android:title="@string/pref_title_proxy_section"
         android:layout="@layout/preference_divider" />

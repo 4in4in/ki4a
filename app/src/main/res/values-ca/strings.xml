@@ -44,6 +44,9 @@
     <string name="pref_title_key">Utilitzar clau privada</string>
     <string name="pref_summary_key">En lloc de contrassenya</string>
 
+    <string name="pref_default_pubkey_accepted_key_types">PubKeyAcceptedKeyTypes (ex.: "+ssh-rsa")</string>
+    <string name="pref_title_pubkey_accepted_key_types"></string>
+
     <string name="pref_title_proxy_section">Proxy HTTP</string>
 
     <string name="pref_title_proxy_host">Adreça</string>

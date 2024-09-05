@@ -206,6 +206,7 @@ public class ki4aService extends Service {
                 boolean dns_switch = preferences.getBoolean("dns_switch",true);
                 String dns_server = preferences.getString("dns_server", GOOGLE_DNS);
                 String forward_string = ForwardList.getForwardString(myContext);
+                String pubkey_accepted_key_types = preferences.getString("pubkey_accepted_key_types", "");
                 int port_number = 22;
                 int proxy_port = 80;
 
@@ -259,7 +260,8 @@ public class ki4aService extends Service {
                                     + " --headerfile " + BASE + "/header_file" + "\""
                                     : " --directconnection --desthost %h --destport %p\"")
                                     + " -o \"KeepAlive yes\" -o \"ServerAliveInterval 15\""
-                                    + " -o \"StrictHostKeyChecking=no\" -o \"GlobalKnownHostsFile=/dev/null\"", false, true);
+                                    + " -o \"StrictHostKeyChecking=no\" -o \"GlobalKnownHostsFile=/dev/null\""
+                                    + (pubkey_accepted_key_types.isEmpty() ? "" : " -o \"PubkeyAcceptedKeyTypes " + pubkey_accepted_key_types + "\""), false, true);
                 }
                 // Connection got closed
 
